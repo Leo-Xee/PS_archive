@@ -7,11 +7,11 @@
  *      = min(D[N/3], D[N/2], D[N-1]) + 1 이다.
  */
 
-#include <iostream>
+#include <cstdio>
 using namespace std;
 
 // 1 <= N <= 10^6
-int d[100001];
+int d[1000001];
 int go(int n) {
     if (n == 1) {
         return 0;
@@ -37,7 +37,7 @@ int go(int n) {
 
 int main() {
     int n;
-    cin >> n;
-    cout << go(n) << '\n';
+    scanf("%d", &n);
+    printf("%d\n", go(n));
     return 0;
 }

@@ -1,3 +1,9 @@
 # Compiled sourcea #
 ####################
 *.exec
+*.dll
+*.exe
+*.o
+*.so
+*.com
+*.class

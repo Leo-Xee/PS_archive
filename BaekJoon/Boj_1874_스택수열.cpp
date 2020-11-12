@@ -11,7 +11,6 @@ int main() {
     cin >> N;
     stack<int> s;
     string ans;
-
     int m = 0;
     
     while(N--) {

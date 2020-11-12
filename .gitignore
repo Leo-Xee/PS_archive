@@ -7,4 +7,10 @@
 *.so
 *.com
 *.class
+*.out
+
+# etc #
+#######
 Note.cpp
+.vscode
+*dSYM

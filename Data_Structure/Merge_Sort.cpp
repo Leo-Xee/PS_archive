@@ -1,6 +1,7 @@
 /**
  * Merge Sort
- * 시간복잡도: O(N * logN)
+ * 시간복잡도: O(N * logN) 
+ * 퀵정렬보다 메모리를 조금 더 사용하지만 최악의 경우에도 보장한다.
  */
 
 #include <stdio.h>

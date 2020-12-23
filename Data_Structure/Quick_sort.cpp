@@ -15,10 +15,10 @@ void quickSort(int *data, int start, int end) {
     int temp;
 
     while (i <= j) {    // 엇갈릴 때까지 반복 
-        while (i <= end && data[i] <= data[key]) {  // 키값보다 큰 값을 만날 때까지 
+        while (i <= end && data[i] <= data[key]) {  // 키값보다 큰 값을 만날 때까지(오른쪽으로) 
             i++;
         }
-        while (j > start && data[j] >= data[key]) { // 키값보다 작은 값을 만날 때까지 
+        while (j > start && data[j] >= data[key]) { // 키값보다 작은 값을 만날 때까지(왼쪽으로) 
             j--;
         }
         if (i > j) {    // 엇갈리면 키 값과 교체

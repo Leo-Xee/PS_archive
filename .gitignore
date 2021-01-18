@@ -1,3 +1,10 @@
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+
 # Compiled source #
 ####################
 *.exec
@@ -13,4 +20,3 @@
 #######
 Note.cpp
 .vscode
-*dSYM

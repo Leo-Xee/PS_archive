@@ -15,8 +15,12 @@
 *.com
 *.class
 *.out
+.DS_Store
 
-# etc #
+# VSC #
 #######
-Note.cpp
-.vscode
+vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.jsone

@@ -1,17 +1,21 @@
-let SelectionSort = function(arr) {
-  let minIdx, temp, i , j;
-  for (i = 0; i < arr.length; i++) {
+let selectionSort = (arr) => {
+  let minIdx, temp;
+  for (let i = 0; i < arr.length; i++) {
     minIdx = i;
-    for (j = i; j < arr.length; j++) {
+    for (let j = i+1; j < arr.length; j++) {
       if (arr[minIdx] > arr[j]) {
         minIdx = j;
       }
     }
-    temp = arr[i];
-    arr[i] = arr[minIdx];
-    arr[minIdx] = temp;
+    // 최솟값이 변경되면 swap
+    if (minIdx !== i) {
+      temp = arr[minIdx];
+      arr[minIdx] = arr[i];
+      arr[i] = temp;
+    }
   }
   return arr;
 }
-let result = SelectionSort([5, 2, 3, 1, 4]);
+
+let result = selectionSort([1, 3, 6, 9, 10, 4, 7, 8, 2, 5]);
 console.log(result);

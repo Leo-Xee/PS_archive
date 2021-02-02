@@ -20,6 +20,7 @@ int main(void) {
       c = root; 
     } while(c != 0);
   }
+
   // 힙을 재차 구성하고 힙의 크기를 1 감소
   for (int i = number-1; i>=0; i--) {   // 가장 큰 값인 루트을 맨뒤로 보낸다(제외시킴)
     int temp = arr[0];
@@ -35,7 +36,7 @@ int main(void) {
         c++;
       }
       //  루트보다 자식의 값이 크면 교환
-      if (c < i && arr[root]< arr[c]) {
+      if (c < i && arr[root] < arr[c]) {
         int temp = arr[root];
         arr[root] = arr[c];
         arr[c] = temp;

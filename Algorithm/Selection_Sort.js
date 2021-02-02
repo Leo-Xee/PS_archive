@@ -2,7 +2,7 @@ let selectionSort = (arr) => {
   let minIdx, temp;
   for (let i = 0; i < arr.length; i++) {
     minIdx = i;
-    for (let j = i+1; j < arr.length; j++) {
+    for (let j = i + 1; j < arr.length; j++) {
       if (arr[minIdx] > arr[j]) {
         minIdx = j;
       }
@@ -15,7 +15,7 @@ let selectionSort = (arr) => {
     }
   }
   return arr;
-}
+};
 
 let result = selectionSort([1, 3, 6, 9, 10, 4, 7, 8, 2, 5]);
 console.log(result);
